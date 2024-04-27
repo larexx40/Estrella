@@ -4,7 +4,7 @@
     <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>Desix - React Nextjs Template</title>
+        <title>Estrella - Bussiness Consultant</title>
         <meta name="next-head-count" content="4" />
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
         <link data-next-font="size-adjust" rel="preconnect" href="index.html" crossorigin="anonymous" />
@@ -591,7 +591,7 @@
                                         <div class="content-box">
                                             <h1 class="title animate-1">Shaping the <br />Perfect Solution <br />for your business </h1>
                                             <div class="btn-box animate-2">
-                                                <a class="theme-btn btn-style-one hover-light" href="page-about">
+                                                <a class="theme-btn btn-style-one hover-light" href="services.html">
                                                     <span class="btn-title">Discover more</span>
                                                 </a>
                                             </div>
@@ -604,7 +604,7 @@
                                         <div class="content-box">
                                             <h1 class="title animate-1">Shaping the <br />Perfect Solution <br />for your Agency </h1>
                                             <div class="btn-box animate-2">
-                                                <a class="theme-btn btn-style-one hover-light" href="page-about">
+                                                <a class="theme-btn btn-style-one hover-light" href="services.html">
                                                     <span class="btn-title">Discover more</span>
                                                 </a>
                                             </div>
@@ -639,14 +639,14 @@
                                         </div>
                                         <div class="content-box">
                                             <i class="icon flaticon-web-development"></i>
-                                            <h5 class="title">Website <br />development </h5>
+                                            <h5 class="title">Digital Marketing & <br />I.T. Consulting  </h5>
                                         </div>
                                         <div class="hover-content">
                                             <i class="icon flaticon-web-development"></i>
                                             <h5 class="title">
-                                                <a href="page-service-details">Website <br />Development </a>
+                                                <a href="services.html">Digital Marketing & <br />I.T. Consulting  </a>
                                             </h5>
-                                            <div class="text">There are many variations of passages of available but the majority.</div>
+                                            <div class="text">Strategic Digital Solutions for Growth. Amplify your online presence with customized digital marketing strategies and innovative I.T. solutions.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -659,14 +659,14 @@
                                         </div>
                                         <div class="content-box">
                                             <i class="icon flaticon-design"></i>
-                                            <h5 class="title">Graphic <br />Designing </h5>
+                                            <h5 class="title">Staff <br />Development </h5>
                                         </div>
                                         <div class="hover-content">
                                             <i class="icon flaticon-design"></i>
                                             <h5 class="title">
-                                                <a href="page-service-details">Graphic <br />Designing </a>
+                                                <a href="services.html">Staff <br />Development </a>
                                             </h5>
-                                            <div class="text">There are many variations of passages of available but the majority.</div>
+                                            <div class="text">Empower Your Team for Success. Invest in your most valuable asset—your employees.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -679,12 +679,12 @@
                                         </div>
                                         <div class="content-box">
                                             <i class="icon flaticon-megaphone"></i>
-                                            <h5 class="title">Digital <br />marketing </h5>
+                                            <h5 class="title">Educational <br />Consult </h5>
                                         </div>
                                         <div class="hover-content">
                                             <i class="icon flaticon-megaphone"></i>
                                             <h5 class="title">
-                                                <a href="page-service-details">Application <br />Development </a>
+                                                <a href="services.html">Educational <br />Consult </a>
                                             </h5>
                                             <div class="text">There are many variations of passages of available but the majority.</div>
                                         </div>
@@ -699,14 +699,14 @@
                                         </div>
                                         <div class="content-box">
                                             <i class="icon flaticon-visitor"></i>
-                                            <h5 class="title">Mobile <br />applications </h5>
+                                            <h5 class="title">Short Form <br />Content </h5>
                                         </div>
                                         <div class="hover-content">
                                             <i class="icon flaticon-visitor"></i>
                                             <h5 class="title">
-                                                <a href="page-service-details">SEO &amp; Content <br />Writing </a>
+                                                <a href="services.html">Short Form <br />Content </a>
                                             </h5>
-                                            <div class="text">There are many variations of passages of available but the majority.</div>
+                                            <div class="text">In the fast-paced digital landscape, grab and hold attention with short-form content that makes an immediate impact.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -747,7 +747,7 @@
                                                     <span class="designation">CEO &amp; CO Founder</span>
                                                 </div>
                                             </div>
-                                            <a class="theme-btn btn-style-one" href="page-about">
+                                            <a class="theme-btn btn-style-one" href="services.html">
                                                 <span class="btn-title">Discover more</span>
                                             </a>
                                         </div>
@@ -803,7 +803,7 @@
                                 <h2 class="title">Better digital marketing <span class="selected">solution</span>
                                     <br />and services at your <br />fingertips
                                 </h2>
-                                <a class="theme-btn btn-style-one light" href="page-contact">
+                                <a class="theme-btn btn-style-one light" href="services.html">
                                     <span class="btn-title">Discover more</span>
                                 </a>
                             </div>
@@ -1586,8 +1586,15 @@
                             items:1
                         }
                     }
-                });                                              
-            });            
+                });
+
+                $('.accordion .acc-btn').click(function() {
+                    $('.accordion .acc-btn').removeClass('active');
+                    $('.accordion .acc-content').removeClass('current');
+                    $(this).toggleClass('active');
+                    $(this).parent('.accordion').find('.acc-content').toggleClass('current');
+                });                                                              
+            });                       
         </script>
     </body>
 </html>
